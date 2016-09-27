@@ -1,10 +1,10 @@
 //
 //  ViewController.swift
 //  Emoji Dictionary
-//
 //  Created by John Fiedler on 9/22/16.
 //  Copyright © 2016 SlobberHound. All rights reserved.
 //
+//  Last updates on 9/27/2016
 
 import UIKit
 
@@ -34,6 +34,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "moveSegue", sender: "📡")
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
