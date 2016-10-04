@@ -13,12 +13,33 @@ class DefinitionViewController: UIViewController {
     var emoji = "NO EMOJI"
 
     @IBOutlet var emojiLabel: UILabel!
+    @IBOutlet var definitionLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         emojiLabel.text = emoji
+        definitionLabel.text = "hello"
+        if emoji == "😎" {
+            definitionLabel.text = "dude, sunglasses!"
+        }
+        if emoji == "🍒" {
+            definitionLabel.text = "cherries, ready for popping"
+        }
+        if emoji == "🎥" {
+            definitionLabel.text = "let's film that popping!"
+        }
+        if emoji == "💙" {
+            definitionLabel.text = "but that would break my heart..."
+        }
+        if emoji == "🐰" {
+            definitionLabel.text = "a cute bunny...."
+        }
+        if emoji == "#️⃣" {
+            definitionLabel.text = "#brokenheart"
+        }
+        //     var emojis = ["😎","🐰","🍒","🎥","💙","#️⃣"]
     }
 
     override func didReceiveMemoryWarning() {
