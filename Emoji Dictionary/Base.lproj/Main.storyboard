@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="972" y="53.523238380809602"/>
         </scene>
-        <!--View Controller-->
+        <!--Definition View Controller-->
         <scene sceneID="EbC-H2-i7j">
             <objects>
-                <viewController id="yHi-bw-pew" sceneMemberID="viewController">
+                <viewController id="yHi-bw-pew" customClass="DefinitionViewController" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZZu-b8-mDv"/>
                         <viewControllerLayoutGuide type="bottom" id="MNB-PE-NXV"/>
@@ -71,6 +71,9 @@
                             <constraint firstItem="TBM-Fd-GXj" firstAttribute="centerX" secondItem="5FW-3I-5v9" secondAttribute="centerX" id="Zis-oj-8Th"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiLabel" destination="Rbj-sI-NIm" id="EkF-PU-eC7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VAH-tj-ZlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
