@@ -24,9 +24,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="u4r-E9-Oho" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="KdW-av-FXv"/>
                             <constraint firstItem="u4r-E9-Oho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U7u-lO-3r5"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u4r-E9-Oho" secondAttribute="bottom" id="hc1-eT-aaR"/>
-                            <constraint firstItem="u4r-E9-Oho" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pOd-xv-jAK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="u4r-E9-Oho" secondAttribute="bottom" id="qvn-1c-dy7"/>
                             <constraint firstAttribute="trailing" secondItem="u4r-E9-Oho" secondAttribute="trailing" id="wlL-dH-fro"/>
                         </constraints>
                     </view>
@@ -57,7 +57,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBM-Fd-GXj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBM-Fd-GXj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="category: Smiley" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzP-xl-dPL">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="birth year: 2010" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsA-uV-jYC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LvU-4O-yd7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,13 +78,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FzP-xl-dPL" firstAttribute="centerX" secondItem="5FW-3I-5v9" secondAttribute="centerX" id="2mN-Ff-jEV"/>
                             <constraint firstItem="Rbj-sI-NIm" firstAttribute="centerX" secondItem="5FW-3I-5v9" secondAttribute="centerX" id="39O-Lh-sZF"/>
-                            <constraint firstItem="TBM-Fd-GXj" firstAttribute="top" secondItem="Rbj-sI-NIm" secondAttribute="bottom" constant="50" id="JlW-E6-z9p"/>
+                            <constraint firstItem="TBM-Fd-GXj" firstAttribute="leading" secondItem="FzP-xl-dPL" secondAttribute="leading" id="4nd-kj-g4I"/>
+                            <constraint firstItem="FzP-xl-dPL" firstAttribute="top" secondItem="TBM-Fd-GXj" secondAttribute="bottom" constant="20" id="7jq-hu-Cda"/>
+                            <constraint firstItem="FzP-xl-dPL" firstAttribute="leading" secondItem="ZsA-uV-jYC" secondAttribute="leading" id="MNC-Yv-oRH"/>
                             <constraint firstItem="Rbj-sI-NIm" firstAttribute="top" secondItem="ZZu-b8-mDv" secondAttribute="bottom" constant="40" id="V6R-1T-kOD"/>
+                            <constraint firstItem="TBM-Fd-GXj" firstAttribute="top" secondItem="Rbj-sI-NIm" secondAttribute="bottom" constant="50" id="V7J-Me-Rf6"/>
                             <constraint firstItem="TBM-Fd-GXj" firstAttribute="centerX" secondItem="5FW-3I-5v9" secondAttribute="centerX" id="Zis-oj-8Th"/>
+                            <constraint firstItem="FzP-xl-dPL" firstAttribute="top" secondItem="TBM-Fd-GXj" secondAttribute="bottom" constant="20" id="aQC-Ba-qKZ"/>
+                            <constraint firstItem="ZsA-uV-jYC" firstAttribute="top" secondItem="FzP-xl-dPL" secondAttribute="bottom" constant="20" id="kNe-uf-JXk"/>
+                            <constraint firstItem="ZsA-uV-jYC" firstAttribute="centerX" secondItem="5FW-3I-5v9" secondAttribute="centerX" id="laj-yj-1HU"/>
+                            <constraint firstItem="ZsA-uV-jYC" firstAttribute="centerX" secondItem="FzP-xl-dPL" secondAttribute="centerX" id="lwT-wM-aCE"/>
+                            <constraint firstItem="ZsA-uV-jYC" firstAttribute="top" secondItem="FzP-xl-dPL" secondAttribute="bottom" constant="20" id="q4x-Qe-RQm"/>
+                            <constraint firstItem="ZsA-uV-jYC" firstAttribute="top" secondItem="FzP-xl-dPL" secondAttribute="bottom" constant="20" id="tZW-bG-sS3"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthyearLabel" destination="ZsA-uV-jYC" id="n3b-KJ-2gz"/>
+                        <outlet property="categoryLabel" destination="FzP-xl-dPL" id="3g9-rP-sZk"/>
                         <outlet property="definitionLabel" destination="TBM-Fd-GXj" id="CFp-i2-P0g"/>
                         <outlet property="emojiLabel" destination="Rbj-sI-NIm" id="EkF-PU-eC7"/>
                     </connections>

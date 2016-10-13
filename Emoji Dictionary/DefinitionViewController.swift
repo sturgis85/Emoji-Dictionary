@@ -13,8 +13,10 @@ class DefinitionViewController: UIViewController {
     var emoji = "NO EMOJI"
 
     @IBOutlet var emojiLabel: UILabel!
+
+    @IBOutlet var categoryLabel: UILabel!
     @IBOutlet var definitionLabel: UILabel!
-    
+    @IBOutlet var birthyearLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,22 +25,33 @@ class DefinitionViewController: UIViewController {
         definitionLabel.text = "hello"
         if emoji == "😎" {
             definitionLabel.text = "dude, sunglasses!"
+            categoryLabel.text = "category: Smiley"
+            birthyearLabel.text = "2011"
         }
         if emoji == "🍒" {
             definitionLabel.text = "cherries, ready for popping"
+            categoryLabel.text = "category: Fruit"
+            birthyearLabel.text = "2012"
         }
         if emoji == "🎥" {
             definitionLabel.text = "let's film that popping!"
+            categoryLabel.text = "category: Action"
+            birthyearLabel.text = "2013"
         }
         if emoji == "💙" {
             definitionLabel.text = "but that would break my heart..."
+            categoryLabel.text = "category: Feeling"
+            birthyearLabel.text = "2014"
         }
         if emoji == "🐰" {
             definitionLabel.text = "a cute bunny...."
+            categoryLabel.text = "category: Animal"
+            birthyearLabel.text = ""
         }
         if emoji == "#️⃣" {
             definitionLabel.text = "#brokenheart"
-        }
+            categoryLabel.text = "category: HashTag"
+            birthyearLabel.text = "(nine months later)"        }
         //     var emojis = ["😎","🐰","🍒","🎥","💙","#️⃣"]
     }
 
@@ -46,16 +59,4 @@ class DefinitionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
